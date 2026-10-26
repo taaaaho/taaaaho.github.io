@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<title>プライバシーポリシー | Kikuno</title><meta name="description" content="Kikunoの録音・文字起こし・議事録・APIキー・アプリ内購入と、サポートサイトのデータの取り扱いについて。">
+<link rel="canonical" href="https://taaaaho.github.io/kikuno/privacy/"><link rel="icon" type="image/svg+xml" href="../assets/kikuno-icon.svg">
+<meta property="og:type" content="website"><meta property="og:title" content="プライバシーポリシー | Kikuno"><meta property="og:description" content="Kikunoの録音・文字起こし・議事録・APIキー・アプリ内購入と、サポートサイトのデータの取り扱いについて。"><meta property="og:url" content="https://taaaaho.github.io/kikuno/privacy/">
+<link rel="stylesheet" href="../assets/site.css">
+</head><body><a class="skip" href="#main">本文へ移動</a>
+<header class="header"><div class="wrap"><a class="brand" href="../" aria-label="Kikuno サポート"><img src="../assets/kikuno-icon.svg" alt="" width="52" height="52">Kikuno</a><nav class="nav" aria-label="メインメニュー"><a href="../">サポート</a><a href="../privacy/" aria-current="page">プライバシー</a></nav></div></header>
+<main id="main" class="wrap"><div class="policy-header"><p class="eyebrow">PRIVACY</p><h1>プライバシーポリシー</h1><p>Kikunoが扱うデータと、その利用・保存・削除について。</p></div><article class="policy"><p>最終更新日: 2026年10月26日</p>
+<h2>運営者</h2>
+<p>運営者: Takaho Hayashi（Kikuno開発者）
+お問い合わせ: <a href="mailto:appfactorycloud@gmail.com">appfactorycloud@gmail.com</a></p>
+<h2>Mac内で扱うデータ</h2>
+<p>Kikunoは、利用者が開始した録音のマイク音声・システム音声、文字起こし、議事録、ライブ字幕をMac内の保存先へ保存します。開発者が運営するサーバーへこれらを送信する機能はありません。録音にはmacOSのマイク・画面／システム音声収録の許可を使用します。画面映像はファイルへ保存しません。</p>
+<p>Whisperによる文字起こし、Appleの音声認識・翻訳、Apple Intelligenceによる議事録作成はMac内で処理します。初回の音声認識・翻訳・文字起こしモデルの取得には、Appleやモデル配信サービスへの通信が発生します。配信サービスには通常の通信に必要なIPアドレス等が伝わる場合があります。</p>
+<h2>音声取り込み・話者分離・編集</h2>
+<p>利用者が選択した音声をアプリの保存先へ変換コピーし、原本を変更しません。任意の話者分離は音声から話者区間をMac内で推定します。モデル取得時はHugging Faceへ通信しますが、推論時には通信せず、音声や声紋を送信しません。会議間の個人識別・声紋ライブラリは作成しません。話者モデルは設定から削除できます。</p>
+<p>編集・再生成・話者名変更前の本文は、録音フォルダ内のHistoryに保持します。版履歴も会議データを含みます。削除する場合は録音フォルダ全体またはHistoryを含めて削除してください。書き出したファイルは利用者が選んだ場所に保存されます。</p>
+<h2>OpenAI / Anthropicの任意利用</h2>
+<p>利用者が外部APIを選択した場合、議事録作成前に送信先と文字起こしの送信について確認し、明示的な同意を得ます。同意した場合のみ、文字起こしの本文・会議タイトル・議事録作成の指示を選択した提供者の公式APIへ送信します。音声ファイルは送りません。</p>
+<p>送信先はOpenAI（api.openai.com）またはAnthropic（api.anthropic.com）です。API認証には利用者自身のAPIキーを使用します。各提供者によるデータの取扱い・保持期間・API料金は、利用者が契約する各社の規約と設定に従います。OpenAIへのリクエストでは<code>store: false</code>を指定しますが、それだけで提供者によるログ保持がなくなることを保証するものではありません。</p>
+<ul>
+<li><a href="https://developers.openai.com/api/docs/guides/your-data">OpenAIのAPIデータ管理</a></li>
+<li><a href="https://www.anthropic.com/legal/privacy">Anthropicプライバシーポリシー</a></li>
+</ul>
+<p>「接続テスト」はサンプル文を送信します。会議の記録は送信しません。テストでもAPI料金が発生する場合があります。</p>
+<h2>APIキー・設定</h2>
+<p>APIキーはmacOSのキーチェーンにサービスごとに保存します。キーをソースコード、通常の設定ファイル、議事録に含めません。設定から選択中の提供者のキーを削除できます。その他の設定はMac内に保存します。</p>
+<h2>アプリ内購入</h2>
+<p>Kikuno Proの買い切り購入はAppleのApp StoreとStoreKitで処理します。アプリはAppleが検証した購入情報を使い、Proの有効・失効を確認します。開発者のサーバーへ購入情報を送信する機能はなく、クレジットカード情報をアプリが取得することもありません。購入の復元は利用者が操作した場合に実行します。</p>
+<h2>手動コピーとクラウド同期</h2>
+<p>手動作成は依頼文と文字起こしをクリップボードへコピーします。利用者が貼り付けて送信したサービスでの処理は、そのサービスの規約に従います。クリップボードの同期設定にも注意してください。</p>
+<p>保存先にiCloud Drive等の同期対象フォルダを選択した場合、その同期サービスがファイルをアップロードすることがあります。Kikunoはその同期処理を管理しません。</p>
+<h2>解析・広告</h2>
+<p>現行バージョンには開発者向けの利用解析SDK、広告SDK、トラッキング機能、アプリ独自のアカウント作成機能はありません。</p>
+<h2>保存期間と削除</h2>
+<p>利用者が保存したファイルは利用者が削除するまでMacに残ります。設定で、文字起こし成功後の音声ファイル自動削除を選択できます。その他の記録は保存フォルダから削除してください。アプリを削除しても、利用者が別フォルダに保存したファイルやキーチェーン項目が残る場合があります。必要に応じて記録・キーを個別に削除してください。</p>
+<h2>お問い合わせで受け取る情報</h2>
+<p>メールでお問い合わせいただいた場合、送信元メールアドレスと本文、利用者が任意に送ったアプリ・OSの情報等を、回答・不具合の確認・サポート対応のために利用します。APIキー、カード情報、実際の機密会議データは送らないでください。お問い合わせ内容の取扱いや削除についても、上記窓口へご連絡ください。</p>
+<h2>サポートサイト</h2>
+<p>本サイトはGitHub Pagesで配信しています。独自のアクセス解析、広告、トラッキングスクリプト、問い合わせフォームは設置していません。サイト閲覧時の通信情報については、配信事業者であるGitHubが<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">同社のプライバシーステートメント</a>に基づき取り扱います。</p>
+<h2>改定・お問い合わせ</h2>
+<p>取扱いの変更時には本ポリシーを更新します。お問い合わせは上記窓口へご連絡ください。</p>
+</article><div class="policy-back"><a href="../">← サポートに戻る</a></div></main>
+<footer class="footer"><div class="wrap"><span>© 2026 Takaho Hayashi · Kikuno</span><div><a href="../">サポート</a><a href="../privacy/">プライバシーポリシー</a><a href="mailto:appfactorycloud@gmail.com?subject=Kikuno%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">お問い合わせ</a></div></div></footer>
+</body></html>

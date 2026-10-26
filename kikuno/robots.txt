@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://taaaaho.github.io/kikuno/sitemap.xml
